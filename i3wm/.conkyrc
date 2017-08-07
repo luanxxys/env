@@ -1,0 +1,71 @@
+## No output to X <yes/no>
+out_to_x no
+
+## Create own window to draw <yes/no>
+own_window no
+
+## Print everything to console?
+out_to_console yes
+
+## Use double buffering (reduces flicker, not needed for console output)
+double_buffer no
+
+## Set to yes if you want Conky to be forked in the
+background
+background no
+
+## Update interval in seconds
+update_interval 1.0
+
+## This is the number of times Conky will update before quitting.
+## Set to zero to run forever.
+total_run_times 0
+
+## Shortens units to a single character (kiB->k,GiB->G, etc.). Default is off.
+short_units yes
+if_up_strictness address
+
+## Add spaces to keep things from moving about?  This only affects certain objects.
+## use_spacer should have an argument of left, right,or none
+use_spacer left
+
+## Force UTF8? note that UTF8 support required XFT
+override_utf8_locale no
+
+## number of cpu samples to average
+## set to 1 to disable averaging
+cpu_avg_samples 4
+
+## Sensors examples
+# Top Process: ${top name 1}
+# Root: {fs_used /}/${fs_size /} /home ${fs_free
+# Load: ${loadavg 1} ${loadavg 2} ${loadavg 3}
+# Load: $loadavg
+# Swap: ${swap}/${swapmax} (${swapperc}%)
+# Processes: ${running_processes} / ${processes}
+# CPU: $cpu%
+# HDD: $diskio_read :Read $diskio_write :Write
+# Temp: Core0: ${exec sensors | awk '/Core 0/ {print
+# Freq: ${freq cpu0}Mhz
+# Uptime: $uptime
+# Kernel:$kernel on $machine
+# Name: $nodename - $sysname
+
+## Stuff after 'TEXT' will be formatted on screen
+TEXT
+Name: $nodename - $sysname
+# CPU stats
+CPU ${cpu cpu1}% | \
+RAM ${mem} | \
+# ifconfig --> look up the netcard name
+# Ethernet status
+# Ul ${upspeed enp0s31f6} /s | \
+# Dl ${downspeed enp0s31f6} /s | \
+# wireless status
+Ul ${upspeed wlp4s0} /s | \
+Dl ${downspeed wlp4s0} /s | \
+# Free space on /home
+/home ${fs_free /home} | \
+Battery ${battery_percent BAT0}% | \
+${time %A %H:%M:%S} ${time %m/%d/%Y}
+
