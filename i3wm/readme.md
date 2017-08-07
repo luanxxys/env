@@ -40,7 +40,7 @@
             cp /etc/i3status.conf ~/.config/i3status/config
 
         效果如图：
-        ![i3status_bar](/images/i3status.png)
+        ![i3status_bar](images/i3status.png)
 
     1. ### conky
 
