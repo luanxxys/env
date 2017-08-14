@@ -13,8 +13,9 @@ set $mod Mod4
 
 # autostart parograms
 
-exec --no-startup-id fcitx
+exec --no-startup-id nm-applet
 exec --no-startup-id lantern
+exec --no-startup-id fcitx
 exec --no-startup-id mate-power-manager
 exec --no-startup-id xcompmgr &
 
@@ -24,7 +25,7 @@ exec --no-startup-id xcompmgr &
 # wallpaper
 
 # single pictures
-exec --no-startup-id feh --bg-scale ~/Pictures/i3_background.jpg
+# exec_always --no-startup-id feh --bg-scale ~/.congif/i3/i3_background.jpg
 
 # If you want something random at every startup this works:
 # exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers/*
@@ -36,29 +37,29 @@ font pango:monospace 16
 
 # bar toggle, hide or show
 bar {
-		status_command i3status -c ~/.config/i3status/config
-		# status_command conky -c ~/.conkyrc
-		position top
-		mode hide
-		# control the behavior of status panel
-    	hidden_state show
-		workspace_buttons yes
-		tray_output primary
-		tray_padding 0
-		separator_symbol "|"
+        # status_command i3status -c ~/.config/i3status/config
+        status_command conky -c ~/.conkyrc
+        position top
+        mode hide
+        # control the show/hide about status panel
+        hidden_state hide
+        workspace_buttons yes
+        tray_output primary
+        tray_padding 0
+        separator_symbol "|"
 
-		font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-    	font pango:DejaVu Sans Mono 13
+        font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+        font pango:DejaVu Sans Mono 13
 
-		colors {
-		background #285477
-		statusline #dedede
-		separator #2d2d2d
-		focused_workspace #636e88 #285de7 #dedfdg
-		active_workspace #556677 #234567 #56ef67
-		inactive_workspace #636d72 #2d2d2d #dedede
-		urgent_workspace #ffffff #900000 #d23d32
-		}
+        colors {
+        background #000000
+        statusline #dedede
+        separator #2d2d2d
+        focused_workspace #636e88 #285de7 #dedfdg
+        active_workspace #556677 #234567 #56ef67
+        inactive_workspace #636d72 #2d2d2d #dedede
+        urgent_workspace #ffffff #900000 #d23d32
+        }
 }
 
 # tray icons(eDP1 is the display device's name,use the command "xrandr" to see.)
@@ -88,11 +89,9 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 # float programs(find the programs'names in "/usr/share/applictions")
-for_window [class="atom"] floating enable
-for_window [class="Gimp"] floating enable
+for_window [class="sublime"] floating enable
 for_window [class="zeal"] floating enable
-for_window [class="goldendict"] floating enable
-for_window [class="Vlc"] floating enable
+for_window [class="vlc"] floating enable
 for_window [class="VirtualBox"] floating enable
 
 #  programs shortcuts
@@ -106,18 +105,20 @@ bindsym $mod+Return exec gnome-terminal
 # GUI file manager
 bindsym $mod+e exec --no-startup-id nautilus
 
+# printscreen(Print=PrtSc/PrintScreen)
+bindsym $mod+Print exec gnome-screenshot
+
 #  workspace control
 
 # Workspace names
-workspace "1:Web" output eDP1
-workspace "2:Code" output eDP1
-workspace "3:Console" output eDP1
-workspace "9:Temp" output eDP1
+# workspace "1:web" output eDP1
+# workspace "2:code" output eDP1
+# workspace "3:console" output eDP1
 
 # putting clients on specific workspaces
-#assign [class="Chromium"] 1
-#assign [class="atom"] 2
-#assign [class="gnome-terminal"] 3
+# assign [class="gnome-chrome"] 1
+# assign [class="sublime"] 2
+# assign [class="gnome-terminal"] 3
 
 #  window control
 
@@ -202,11 +203,10 @@ bindsym $mod+v split v
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the window's width.
+        # Pressing right will grow the window's width.
+        # Pressing up will shrink the window's height.
+        # Pressing down will grow the window's height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
@@ -284,9 +284,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # i3lock
- mode "i3lock: Return to lock/Escape to Cancel" {
-            bindsym Return mode "default" exec i3lock -I 180 -i ~/.config/i3/i3_lock.jpge
-            bindsym Escape mode "default"
+mode "i3lock: Return to lock/Escape to Cancel" {
+            bindsym Return mode "default" exec i3lock -c '#000000'
     }
 
 bindsym $mod+mod1+l mode "i3lock: Return to lock/Escape to Cancel"

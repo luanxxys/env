@@ -4,11 +4,11 @@ out_to_x no
 ## Create own window to draw <yes/no>
 own_window no
 
-## Print everything to console?
+## Print everything to console
 out_to_console yes
 
 ## Use double buffering (reduces flicker, not needed for console output)
-double_buffer no
+double_buffer yes
 
 ## Set to yes if you want Conky to be forked in the
 background
@@ -67,5 +67,5 @@ Dl ${downspeed wlp4s0} /s | \
 # Free space on /home
 /home ${fs_free /home} | \
 Battery ${battery_percent BAT0}% | \
-${time %A %H:%M:%S} ${time %m/%d/%Y}
+${time %m/%d/%Y} ${time %A %H:%M:%S}
 
