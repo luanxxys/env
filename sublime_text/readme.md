@@ -1,12 +1,38 @@
-### Installation
+### sublime text 3
 
-- #### 安装包管理器
+##### GNU/Fedora
 
-    使用 Ctrl+` 快捷键或者通过View->Show Console菜单打开命令行，粘贴如下代码：
+    > fedora 需要选择 tarball 版本。下载后将 sublime text 3 解压后放到 opt 目录下。这是默认位置，你也可以选择其他路径，对应进行修改。
 
-        import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+1. 假定下载到 /home/Download下载 目录下，为了方便，我们直接用归档管理器打开，将压缩包里的文件拉到 /home/hioeb 下。重命名文件夹名称为 sublime_text。同样也是默认命名。
+        
+1. 接着，我们打开 shell ，切换到 root 权限，执行拷贝操作：
+        
+    sudo su
+    cp -r /home/Download/sublime_text /opt
 
-    顺利的话，此时就可以在 Preferences 菜单下看到 Package Settings 和 Package Control 两个菜单了
+1. 如果我们想在命令行下键入 sublime 就启动 sublime text ，我们可以执行以下命令，建立软链接：
+
+    ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
+    > 确保路径正确
+
+1. 如果我们还想添加到收藏夹，方便打开，那么我们还需要将 sublime_text.desktop 文件拷贝到 /usr/share/applications/ 目录下
+
+我们就可以在 Gnome 3 的应用程序列表里看到 sublime_text 了，如果要添加到收藏夹，右键就有了。（这个步骤，要打开这个文件确保里面的路径都是正确，图片是合适的）
+
+##### Archlinux
+
+    yaourt sublime
+
+选择 fcitx 修复版本（支持输入中文） 
+
+#### 安装包管理器
+
+使用 Ctrl+` 快捷键或者通过View->Show Console菜单打开命令行，粘贴如下代码：
+
+    import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+顺利的话，此时就可以在 Preferences 菜单下看到 Package Settings 和 Package Control 两个菜单了
     
 - ####  插件安装
 

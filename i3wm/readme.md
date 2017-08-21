@@ -72,7 +72,36 @@
 
         下载 .Xresources 文件，并移到 home 下
 
+- ### i3-gaps
+
+    [项目主页： https://github.com/Airblader/i3](https://github.com/Airblader/i3)
+
+    为了方便，将安装过程列出来：
+
+        cd /path/where/you/want/the/repository
+
+        # clone the repository
+        git clone https://www.github.com/Airblader/i3 i3-gaps
+        cd i3-gaps
+
+        # compile & install
+        autoreconf --force --install
+        rm -rf build/
+        mkdir -p build && cd build/
+
+        # Disabling sanitizers is important for release versions!
+        # The prefix and sysconfdir are, obviously, dependent on the distribution.
+        ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+        make
+        sudo make install
+
+    安装好以后，将相关配置写入主配置文件
+
 - ### 尚存问题
 
     1. lantern 在 chrome 中不可用，但在 tor 中可用。可能是 chrome 代理需要设置
-    2. 高分屏支持设置好像会影响到 gnome 中的设置
+    1. 透明效果未奏效
+    1. xmind 运行出问题
+    1. 总结此配置下的 feature、 shortcut keys
+    1. i3wm 禁用触控板
+    1. 色温调节（f.lux ?）
