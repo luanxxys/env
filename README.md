@@ -23,6 +23,7 @@ Inclouded both windows' and unix'
     p7zip|
     albert|
     qBittorrent|
+    franz|
 
 - ### Gnome Extenstoins
 

@@ -1,6 +1,6 @@
 ### Install fcitx
 
-    sudo pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin fcitx-cloudpinyin
+    sudo pacman -S fcitx-im fcitx-configtool fcitx-sogoupinyin
 
 ### Configuration
 
