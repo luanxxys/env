@@ -22,6 +22,10 @@
 
     $ git add .
 
+或
+
+    $ git add --all
+
 把对某个文件的修改添加到下次提交中
 
     $ git add -p <file>
