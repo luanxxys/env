@@ -44,7 +44,8 @@ Inclouded both windows' and unix'
     xodo pdf|PDF reader
     Bandizip|压缩软件
     Everything|搜索软件
-    Rufus|启动盘工具
+    listary|启动工具
+    Rufus|启动盘工具
     MagicEXIF|图片信息查看
     DiskGenius|磁盘工具
     umatraPDF|MOBI
