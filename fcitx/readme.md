@@ -14,7 +14,7 @@ add googlepinyin
 
     sudo vim /etc/environment
 
-add contents:
+add contents
     
     export GTK_IM_MODULE=fcitx
     export QT_IM_MODULE=fcitx

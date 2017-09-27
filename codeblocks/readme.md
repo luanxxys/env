@@ -2,7 +2,7 @@
 
 - ##### GNU/Linux
 
-    /home/luanxxy/.config/codeblocks/default.conf
+        /home/luanxxy/.config/codeblocks/default.conf
 
     更换调试终端
 
@@ -10,11 +10,11 @@
                 ==>General Setting
                 ==>Terminal to lanuch console programs
 
-        用 'gnome-terminal -t $TITLE -x' 替换掉 'xterm -T $TITLE -e'
+    用 'gnome-terminal -t $TITLE -x' 替换掉 'xterm -T $TITLE -e'
 
 - ##### windows
 
-    C: --> users --> AppData --> roaming --> default.conf
+        C: --> users --> AppData --> roaming --> default.conf
 
-将相应配置文件改名后移到对应文件夹
+    将相应配置文件改名后移到对应文件夹
 

@@ -78,6 +78,7 @@
 
     为了方便，将安装过程列出来：
 
+    ``` bash
         cd /path/where/you/want/the/repository
 
         # clone the repository
@@ -94,6 +95,7 @@
         ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
         make
         sudo make install
+    ```
 
     安装好以后，将相关配置写入主配置文件
 
