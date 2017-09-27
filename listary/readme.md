@@ -2,7 +2,7 @@
 
 ### Configuration
 
-- search
+search
 
     知乎：https://www.zhihu.com/search?type=content&q={query}
     淘宝：https://s.taobao.com/search?q={query}

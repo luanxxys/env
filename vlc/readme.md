@@ -1,8 +1,5 @@
-# VLC
+### VLC
 
-
-### Problem
-
--  VLC subtitle messy code
+VLC subtitle messy code
 
     Font ---> Microsoft JhengHei UI

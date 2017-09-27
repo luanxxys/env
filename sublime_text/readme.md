@@ -8,12 +8,12 @@
         
 1. 接着，我们打开 shell ，切换到 root 权限，执行拷贝操作：
         
-    sudo su
-    cp -r /home/Download/sublime_text /opt
+        sudo su
+        cp -r /home/Download/sublime_text /opt
 
 1. 如果我们想在命令行下键入 sublime 就启动 sublime text ，我们可以执行以下命令，建立软链接：
 
-    ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
+        ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
     > 确保路径正确
 
 1. 如果我们还想添加到收藏夹，方便打开，那么我们还需要将 sublime_text.desktop 文件拷贝到 /usr/share/applications/ 目录下
@@ -46,17 +46,17 @@
     
     + Theme -Soda
 
-        Setting user 里面添加 ”theme”: “Soda Dark.sublime-theme”
+        Setting user 里面添加 ”theme”: “Soda Dark 3.sublime-theme”
 
         * 更改侧边栏字体大小
 
-            从 PackageResourceViewer 插件打开主题文件，直接搜索"font.bold",在下面添加
+            从 PackageResourceViewer:Open Resource 插件打开主题文件，在 Sidebar entry 添加
 
-                "font.size": 15
+                "font.size": 15,
 
         * 调整行间距
 
-            sidebar tree 中，调整为
+            在 sidebar tree 中，调整为
 
                 "row_padding": [8, 7],
     
@@ -76,21 +76,23 @@
 
     + SideBar Enhancements
 
-        侧栏右键功能增强，非常实用
+            侧栏右键功能增强，非常实用
     
     + Compare Side-By-Side
 
-        Sublime版本的Beyond Compare
+            Sublime 版本的 Beyond Compare
     
     + Emmet
 
         前端必备，快速开发 HTML/CSS
-            Tab 键触发
+
+        Tab 键触发
     
     + JsFormat
 
         格式化 js 代码
-            快捷键 Ctrl+Alt+F，即可让代码还原
+
+        快捷键 Ctrl+Alt+F，即可让代码还原
 
     
 - #### 可选

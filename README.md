@@ -69,7 +69,7 @@ Inclouded both windows' and unix'
     netease-cloud-music|
     sublime_text_3|
 
-- ### platform: Android 
+- ### platform: Android (Tablet)
 
     name|summary
     ---|---
@@ -81,6 +81,9 @@ Inclouded both windows' and unix'
     TED|
     Kiwix| 
     Autodesk SketchBook|
+    Google|
+    Google Now|
+    Google ...|
 
 - ### 待尝试
 

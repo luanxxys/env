@@ -24,15 +24,15 @@
 
 1. 预处理
 
-    sudo update
-    sudo dnf install kernel kernel-devel
+        sudo update
+        sudo dnf install kernel kernel-devel
     > 如果创建虚拟机时出错，则按照提示进行操作
 
 1. 安装、新建虚拟机
 
 1. 安装 Vbox Addtions
 
-    安装好系统后，安装工具包VBoxGuestAdditions.iso
+    安装好系统后，安装工具包 VBoxGuestAdditions.iso
 
     这个映像文件位于VirtualBox的安装目录下，/usr/share/virtualbox
 
@@ -71,12 +71,13 @@
 
     2. 打开挂载的驱动
 
-        $ tar -xzvf VMwareTools-X.tar.gz
+            $ tar -xzvf VMwareTools-X.tar.gz
         > 可能需要先将文件移到别的文件夹下，再进行操作
         
     3. 安装
-        $ cd VMwareTools-X
-        $ sudo ./vmware-install.pl
+
+            $ cd VMwareTools-X
+            $ sudo ./vmware-install.pl
 
     4. 接着就可以设置 '共享文件夹' 了
 
