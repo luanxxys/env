@@ -49,8 +49,8 @@ Inclouded both windows' and unix'
     MagicEXIF|图片信息查看
     DiskGenius|磁盘工具
     umatraPDF|MOBI
-    System Update|Thinkpad only
     可选
+    System Update|Thinkpad only
     iTools|sync for apple product
     Kiwix|offline wiki
 
@@ -59,8 +59,7 @@ Inclouded both windows' and unix'
 
     name|summary
     ---|---
-    google-chrome|
-    lantern|
+    chrome|
     xmind|
     pycharm|
     tor-browser|
@@ -77,13 +76,14 @@ Inclouded both windows' and unix'
     GalleryVault|
     Adobe Reader（Acrobat）|
     SoloLearn|
-    Mail Master|
     TED|
-    Kiwix| 
+    Kiwix|
     Autodesk SketchBook|
     Google|
     Google Now|
     Google ...|
+
+    - ### platform: ios - iPad
 
 - ### 待尝试
 
