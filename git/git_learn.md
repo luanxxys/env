@@ -9,8 +9,8 @@
 
     + #### 创建一个新目录
 
-            $ mkdir learngit
-            $ cd learngit
+            $ mkdir learn_git
+            $ cd learn_git
 
     + #### 将创建的目录变成 Git 可以管理的仓库
 
@@ -117,7 +117,7 @@
 
         * #### 第1步：创建SSH Key
 
-                $ ssh-keygen -t rsa -C "youremail@example.com"
+                $ ssh-keygen -t rsa -C "email@example.com"
             > 在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
 
         * #### 第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面，然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容

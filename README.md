@@ -10,25 +10,35 @@ Inclouded both windows' and unix'
 
     name|summary
     ---|---
-    i3wm|Window manager
     masterpdfeditor|PDF reader
     libreoffice|
-    kchmviewer|chm reader
-    fbreader|mobi reader
     zeal|
     guke-terminal|
-    ntfs-3g|
     git|
     openssh|
     p7zip|
-    albert|
-    qBittorrent|
+    ntfs-3g|
     franz|
+    kchmviewer|chm reader
+    fbreader|mobi reader
+    qBittorrent|
+    albert|
+    i3wm|Window manager
 
 - ### Gnome Extenstoins
 
-    [extension 安装下载地址: https://extensions.gnome.org/](https://extensions.gnome.org/)
-    > 网页方式安装各扩展
+    extension 安装下载地址: https://extensions.gnome.org/
+
+    安装方法
+
+        ＋　网页方式安装
+
+        ＋　文件管理器
+
+            ~/.local/share/gnome-shell/extensions/
+            > 若不存在扩展目录,则手动创建
+
+            将下载下来的文件，解压缩到这个文件夹即可
 
     启用|拓展|如下
     ---|---|---
@@ -59,6 +69,7 @@ Inclouded both windows' and unix'
 
     name|summary
     ---|---
+    sublime_text_3|
     chrome|
     xmind|
     pycharm|
@@ -66,7 +77,6 @@ Inclouded both windows' and unix'
     virtualbox|
     wireshark|
     netease-cloud-music|
-    sublime_text_3|
 
 - ### platform: Android (Tablet)
 
@@ -83,7 +93,7 @@ Inclouded both windows' and unix'
     Google Now|
     Google ...|
 
-    - ### platform: ios - iPad
+- ### platform: ios - iPad
 
 - ### 待尝试
 
