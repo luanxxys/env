@@ -1,6 +1,6 @@
 ### Install fcitx
 
-    sudo pacman -S fcitx-im fcitx-configtool fcitx-sogoupinyin
+    sudo pacman -S fcitx-im fcitx-configtool fcitx-sogoupinyin fcitx-cloudpinyin
 
 ### Configuration
 
@@ -8,14 +8,14 @@
 
 open fcitx-configtool
 
-add googlepinyin
+add sougoupinyin
 
 ##### for all softwares
 
     sudo vim /etc/environment
 
 add contents
-    
+
     export GTK_IM_MODULE=fcitx
     export QT_IM_MODULE=fcitx
     export XMODIFIERS="@im=fcitx"
@@ -26,19 +26,19 @@ add contents
 
 ##### 安装图形管理依赖
 
-很多人说到fcitx安装成功了，配置也配置好了，在浏览器或者其他应用里面可以用，但在terminal中就不能使用，这是因为没有装fcitx的图形管理包所导致的。kde依赖于qt5,而gnome依赖于gtk3
+很多人说到fcitx安装成功了，配置也配置好了，在浏览器或者其他应用里面可以用，但在 terminal 中就不能使用，这是因为没有装 fcitx 的图形管理包所导致的。kde 依赖于 qt5,而 gnome 依赖于 gtk3
 
-kde界面使用：  
+kde 界面使用：
 
     sudo dnf install fcitx-qt5
 
-gnome界面使用：  
+gnome 界面使用：
 
     sudo dnf install fcitx-gtk3
 
 ##### 安装输入法选择器
 
-这里使用im-chooser
+这里使用 im-chooser
 
     sudo dnf install im-chooser
 

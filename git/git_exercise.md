@@ -5,7 +5,7 @@
     1. git clone 命令从远程下载 repo 到本地
 
     1. 本地新建仓库后，不能直接 git remote 连接，应该先 git pull 一下（否则，如果在　github　的　remote　上已经有了文件，会出现错误）
-            
+
             git pull origin master
 
         然后再进行
@@ -13,7 +13,7 @@
             git push origin master
 
         git clone 只能下载 master 分支到本地，若想下载全部分支
-        
+
             查看全部分支
 
                 git branch -a

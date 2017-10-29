@@ -1,6 +1,6 @@
 ### zsh
 
-    sudo dnf install zsh
+    $ sudo dnf install zsh
 
 ### oh my zsh
 
@@ -8,15 +8,15 @@
 
  1. If you already have an existing ~/.zshrc file, create a backup:
 
-        cp ~/.zshrc ~/.zshrc.orig
+        $ cp ~/.zshrc ~/.zshrc.orig
 
 3. Create a new zsh config by copying the zsh template we’ve provided.
 
-        cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+        $ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 4. Set zsh as your default shell:
 
-        chsh -s /bin/zsh
+        $ chsh -s /bin/zsh
 
 5. Restart ZSH
 
