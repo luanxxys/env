@@ -31,14 +31,19 @@ Inclouded both windows' and unix'
 
     安装方法
 
-        ＋　网页方式安装
+        ＋　网页方式安装（貌似不可用了 - 10.30,2017）
 
         ＋　文件管理器
 
             ~/.local/share/gnome-shell/extensions/
+            (/usr/share/gnome-shell/extensions/ - 全部用户)
             > 若不存在扩展目录,则手动创建
 
             将下载下来的文件，解压缩到这个文件夹即可
+
+        ＋　命令行安装
+
+                yaourt gnome-shell-extension-<name>
 
     启用|拓展|如下
     ---|---|---
@@ -46,6 +51,9 @@ Inclouded both windows' and unix'
     dynamic top bar|hide top bar|netspeed
     openweather|gtile|pomodoro|topicons plus
     workspace indicator
+
+    $ sudo pacman -S screenfetch
+    > screenfetch 在打开终端是自动输出，在 '~/.zshrc' 里加入 'screenfetch'
 
 - ### platform: windows 10 only
 

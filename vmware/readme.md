@@ -1,5 +1,11 @@
 # VMware Station
 
+### Installation
+
+    $ yaourt vmware
+
+若提示缺少　kernel headers（Archlinux 中提示）, yaourt 进行安装即可。
+
 ### Issue
 
 设置NAT时，勿忘按照规划好的IP地址，对虚拟网卡（subnet、gateway）及虚拟机（IPv4）进行设置，而不是选择DHCP。另外还需修改主机上网络共享中心的虚拟网卡的IPv4
