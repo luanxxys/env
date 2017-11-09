@@ -2,7 +2,7 @@
 
 使用已有配置：spf13-vim
 
-官方地址： http://vim.spf13.com/
+地址： https://github.com/spf13/spf13-vim
 
 ### spf13-vim 常用插件
 
