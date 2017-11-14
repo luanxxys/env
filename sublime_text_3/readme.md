@@ -43,7 +43,7 @@
 
     + PackageResourceViewer
 
-    + Theme -Soda
+    + Theme-Soda
 
         Setting user 里面添加 ”theme”: “Soda Dark 3.sublime-theme”
 
