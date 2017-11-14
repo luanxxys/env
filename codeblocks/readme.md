@@ -11,6 +11,7 @@
                 ==>Terminal to lanuch console programs
 
     用 'gnome-terminal -t $TITLE -x' 替换掉 'xterm -T $TITLE -e'
+    > 其它 terminal 类似
 
 - ##### windows
 
