@@ -50,7 +50,7 @@ Inclouded both windows' and unix'
     coverflow alt-tab|dash to dock|battery status
     dynamic top bar|hide top bar|netspeed
     openweather|gtile|pomodoro|topicons plus
-    workspace indicator
+    workspace indicator|
 
     $ sudo pacman -S screenfetch
     > screenfetch 在打开终端是自动输出，在 '~/.zshrc' 里加入 'screenfetch'

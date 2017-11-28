@@ -1,46 +1,59 @@
-# SwitchyOmega 实现代理自动切换
+# Chrome extension：SwitchyOmega
 
-### 设置自动切换
+### [reference](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
 
-- 打开 SwitchyOmega 设置，新建情景模式，选择自动切换模式
+- 下载
 
-- 导入在线规则列表，类型选择 AutoProxy，可以选择导入 gfwlist - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt 或者自己自定义的 AutoProxy 文件。
+    [download](https://github.com/FelisCatus/SwitchyOmega/releases)
 
-- 保存设置并更新情景模式，若更新失败则开启全局代理后更新。
+- 安装到 chrome 中
 
-- 设置规则匹配则使用代理模式，否则直接连接。保存退出。
+    打开 chrome://extensions/ 界面，将插件直接拖到这儿
 
-### 自定义 AutoProxy 文件
+- 设置 SwitchyOmega（in Speech processing lab）
 
-AutoProxy 文件格式如下
+        Sock5 192.168.11.211 port:7070
 
+    + 实现代理自动切换
 
-    !注释
+        建议直接阅读（即，跳过全部以下内容）：[reference](https://eliyar.biz/AutoProxy-By-Shadowsocks-and-SwitchyOmega/)
 
-    example.com
-    !匹配 http://www.example.com/foo, http://www.google.com/search?q=www.example.com
-    !不匹配 https://www.example.com/
+        * 打开 SwitchyOmega 设置，新建情景模式，选择自动切换模式
 
-    |http://example.com
-    !匹配 所有开头为 https://example.com 网页
-    !不匹配 短连接如 http://t.co/dsadas
+        * 导入在线规则列表，类型选择 AutoProxy，可以选择导入 'gfwlist - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt', 或者自定义的 AutoProxy 文件。
 
-    ||example.com
-    !匹配 http://example.com/foo, https://subdomain.example.com/bar
-    !不匹配 http://www.google.com/search?q=example.com
+        * 保存设置并更新情景模式，若更新失败则开启全局代理后更新。
 
-按照上一个方法,导入自定义的文件
+        * 设置规则匹配则使用代理模式，否则直接连接。保存退出。
 
-### 优化
+    + 自定义 AutoProxy 文件
 
-判断 SwitchyOmega 有哪些资源未加载
+        AutoProxy 文件格式如下
 
-- SwitchyOmega -> 界面 -> 快速切换 取消勾选
+            !注释
 
-- 随便打开一个网站，如 https://www.instagram.com/，则可以看到 SwitchyOmega 图标右下角多了一个数字1
+            example.com
+            !匹配 http://www.example.com/foo, http://www.google.com/search?q=www.example.com
+            !不匹配 https://www.example.com/
 
-- 点击 SwitchyOmega 图标 -> 1个资源未加载 -> 选择代理模式并添加条件
+            |http://example.com
+            !匹配 所有开头为 https://example.com 网页
+            !不匹配 短连接如 http://t.co/dsadas
 
-- 打开 SwitchyOmega 设置，刷新可以看到刚刚添加的两个条件。之后访问 https://www.instagram.com/ 会直接调用 vpn。其他网站继续直接连接
+            ||example.com
+            !匹配 http://example.com/foo, https://subdomain.example.com/bar
+            !不匹配 http://www.google.com/search?q=example.com
 
-[reference](https://eliyar.biz/AutoProxy-By-Shadowsocks-and-SwitchyOmega/)
+        按照上一个方法,导入自定义的文件
+
+    + 优化
+
+        判断 SwitchyOmega 有哪些资源未加载
+
+        * SwitchyOmega -> 界面 -> 快速切换 取消勾选
+
+        * 随便打开一个网站，如 https://www.instagram.com/，则可以看到 SwitchyOmega 图标右下角多了一个数字1
+
+        * 点击 SwitchyOmega 图标 -> 1个资源未加载 -> 选择代理模式并添加条件
+
+        * 打开 SwitchyOmega 设置，刷新可以看到刚刚添加的两个条件。之后访问 https://www.instagram.com/ 会直接调用 vpn。其他网站继续直接连接
