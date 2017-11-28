@@ -20,7 +20,7 @@
 
         * 打开 SwitchyOmega 设置，新建情景模式，选择自动切换模式
 
-        * 导入在线规则列表，类型选择 AutoProxy，可以选择导入 'gfwlist - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt', 或者自定义的 AutoProxy 文件。
+        * 导入在线规则列表，类型选择 AutoProxy，可以选择导入 `gfwlist - https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`, 或者自定义的 AutoProxy 文件。
 
         * 保存设置并更新情景模式，若更新失败则开启全局代理后更新。
 
@@ -52,7 +52,7 @@
 
         * SwitchyOmega -> 界面 -> 快速切换 取消勾选
 
-        * 随便打开一个网站，如 https://www.instagram.com/，则可以看到 SwitchyOmega 图标右下角多了一个数字1
+        * 随便打开一个网站，如 https://www.instagram.com/ ，则可以看到 SwitchyOmega 图标右下角多了一个数字1
 
         * 点击 SwitchyOmega 图标 -> 1个资源未加载 -> 选择代理模式并添加条件
 
