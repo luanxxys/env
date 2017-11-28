@@ -1,7 +1,5 @@
 # Chrome extension：SwitchyOmega
 
-### [reference](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
-
 - 下载
 
     [download](https://github.com/FelisCatus/SwitchyOmega/releases)
@@ -57,3 +55,6 @@
         * 点击 SwitchyOmega 图标 -> 1个资源未加载 -> 选择代理模式并添加条件
 
         * 打开 SwitchyOmega 设置，刷新可以看到刚刚添加的两个条件。之后访问 https://www.instagram.com/ 会直接调用 vpn。其他网站继续直接连接
+
+
+### [reference](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
