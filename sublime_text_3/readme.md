@@ -63,7 +63,7 @@
 
         要全局配置 ignored_packages: [“Markdown”] 禁用 ST 默认的 Markdown 插件，否则 MarkdownEditing 中看不到代码染色的效果，也不会有 GFM 的语法增强。
 
-    + OmniMarkupPreviwer
+    + OmniMarkupPreviewer
 
         实时在浏览器中预览
 
