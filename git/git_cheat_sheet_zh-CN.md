@@ -2,7 +2,7 @@
 
 复制一个已创建的仓库
 
-    $ git clone ssh://user@domain.com/repo.git
+    $ git clone git@github.com:user@domain.com/repo
 
 创建一个新的本地仓库
 
@@ -161,11 +161,11 @@
 
     $ git remote add <remote> <url>
 
-下载远程端版本，但不合并到HEAD中
+下载远程端版本，但不合并到 HEAD 中
 
     $ git fetch <remote>
 
-下载远程端版本，并自动与HEAD版本合并
+下载远程端版本，并自动与 HEAD 版本合并
 
     $ git remote pull <remote> <url>
 
@@ -195,7 +195,7 @@
 
     $ git reset --hard HEAD
 
-移除缓存区的所有文件（i.e. 撤销上次git add）
+移除缓存区的所有文件（i.e. 撤销上次 git add）
 
     $ git reset HEAD
 
@@ -207,14 +207,14 @@
 
     $ git revert <commit>
 
-将HEAD重置到指定的版本，并抛弃该版本之后的所有修改
+将 HEAD 重置到指定的版本，并抛弃该版本之后的所有修改
 
     $ git reset --hard <commit>
 
-将HEAD重置到上一次提交的版本，并将之后的修改标记为未添加到缓存区的修改
+将 HEAD 重置到上一次提交的版本，并将之后的修改标记为未添加到缓存区的修改
 
     $ git reset <commit>
 
-将HEAD重置到上一次提交的版本，并保留未提交的本地修改
+将 HEAD 重置到上一次提交的版本，并保留未提交的本地修改
 
     $ git reset --keep <commit>

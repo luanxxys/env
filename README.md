@@ -81,10 +81,6 @@ Inclouded both windows' and unix'
     chrome|
     xmind|
     pycharm|
-    tor-browser|
-    virtualbox|
-    wireshark|
-    netease-cloud-music|
 
 - ### platform: Android (Tablet)
 
