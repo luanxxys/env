@@ -5,7 +5,7 @@
     $ sudo pacman -S --needed dkms virtualbox virtualbox-guest-iso
     $ sudo systemctl enable dkms
 
-把user加到vboxusers的组内:
+把 user 加到 vboxusers 的组内
 
     $ sudo gpasswd -a $USER vboxusers
 
@@ -43,9 +43,9 @@
     > 安装好增强工具以后才可用
 
     1. 在 VirtualBox 先选择你的虚拟系统，接着“settings”，选“shared folders”，点击添加。设置好共享的文件夹及其名字，例如名字取为 Documents
-    
+
     2. 接着启动进入客户机 Windows，打开“我的电脑”，依次点击菜单栏“工具”－“映射网络驱动器”，驱动器盘符自选，文件夹填“\\\vboxsvr\Documents”，Documents 是之前设置的共享文件夹的名称
-    
+
     3. 确定后,在“网络驱动器”那里就可以看到共享文件夹的盘标了
 
 遇到的问题：
@@ -73,7 +73,7 @@
 
             $ tar -xzvf VMwareTools-X.tar.gz
         > 可能需要先将文件移到别的文件夹下，再进行操作
-        
+
     3. 安装
 
             $ cd VMwareTools-X
