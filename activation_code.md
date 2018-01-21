@@ -14,10 +14,10 @@
     E36B85CC 84991F19 7575D828 470A92AB
     —— END LICENSE ——
 
-### vmware14 pro(windows)
+### vmware14 pro
 
     FF590-2DX83-M81LZ-XDM7E-MKUT4
 
-### Matlab 2016a(windows)
+### Matlab 2016a/2017a
 
     09806-07443-53955-64350-21751-41297
