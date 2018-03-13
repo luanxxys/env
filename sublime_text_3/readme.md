@@ -79,6 +79,8 @@
 
             "mathjax_enabled": true
 
+    + MarkdownTOC
+
     + SideBar Enhancements
 
             侧栏右键功能增强，非常实用
