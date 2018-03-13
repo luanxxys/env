@@ -73,6 +73,12 @@
             § Ctrl+Alt+X: Export Markup as HTML
             § Ctrl+Alt+C: Copy Markup as HTML
 
+        添加编辑数学公式功能
+
+            Package Settings -> OmniMarkupPreviewer -> Setting - Default
+
+            "mathjax_enabled": true
+
     + SideBar Enhancements
 
             侧栏右键功能增强，非常实用
