@@ -9,9 +9,13 @@
             /usr/local/MATLAB/R2017b/toolbox
             C:\MATLAB\R2012b\toolbox
 
-    1. 找到 'C:\ProgramFiles\MATLAB\R2017b\toolbox\local\pathdef.m' 文件，打开，把上面路径添加到该文件中，保存。
+    1. 找到 'pathdef.m' 文件，打开，把上面路径添加到该文件中，保存。
 
             matlabroot,'\toolbox\voicebox;', ...
+
+        > C:\ProgramFiles\MATLAB\R2017b\toolbox\local\pathdef.m
+        >
+        > /usr/local/MATLAB/R2017b/toolbox/local/pathdef.m
 
     1. 运行 `rehash toolboxcache` 命令，完成工具箱加载
 
