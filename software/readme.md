@@ -73,7 +73,7 @@ Included both windows' and unix'
     Bandizip|
     MagicEXIF|
     DiskGenius|
-    umatraPDF|MOBI
+    sumatraPDF|MOBI
     Everything|search file
 
     可选
