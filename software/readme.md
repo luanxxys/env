@@ -72,7 +72,7 @@ Included both windows' and unix'
     xodo pdf|
     Bandizip|
     MagicEXIF|
-    DiskGenius|
+    Partition Guru|
     sumatraPDF|MOBI
     Everything|search file
 
