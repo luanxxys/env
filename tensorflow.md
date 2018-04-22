@@ -13,6 +13,6 @@
 
         $ pip install --ignore-installed --upgrade <tfBinaryURL>
 
-    > <tfBinaryURL> is the [URL of the TensorFlow Python package](https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package),where you can choose the type of tensorflow, included kinds of CPU/GPU and Python version.
+    > <tfBinaryURL> is the [URL of the TensorFlow Python package](https://tensorflow.google.cn/install/install_linux#the_url_of_the_tensorflow_python_package),where you can choose the type of tensorflow, included kinds of CPU/GPU and Python version.
     >
     > You can run the command to upgrade tensorflow, or if there are unexplainable problems happened.
