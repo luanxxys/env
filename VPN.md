@@ -1,10 +1,10 @@
 # 代理上网
 
-### 实验室有境外服务器，或自己有 SS 账号
+## 实验室有境外服务器，或自己有 SS 账号
 
-    [使用 SwitchyOmega 代理上网](https://github.com/luanxxys/env/blob/master/software/google-chrome/SwitchyOmega.md)
+[使用 SwitchyOmega 代理上网](https://github.com/luanxxys/env/blob/master/software/google-chrome/SwitchyOmega.md)
 
-### 更改 hosts（实验室防火墙下或部分不可用）
+## 更改 hosts（实验室防火墙下或部分不可用）
 
 - Windows
 
@@ -22,12 +22,6 @@
 
     其它设置类似 windows 环境
 
-
 - [hosts 文件来源](https://github.com/lennylxx/ipv6-hosts)
 
 - [修改 hosts 文件的原理](https://www.zhihu.com/question/19782572)
-
-
-
-
-
