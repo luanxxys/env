@@ -1,6 +1,8 @@
 # vim
 
-使用已有配置 [spf13-vim](https://github.com/spf13/spf13-vim)
+使用已有配置 [spf13-vim](https://github.com/spf13/spf13-vim), 安装和升级参考官网。
+
+[简介:spf13-vim-Vim编辑器的终极版本.pdf](spf13-vim-Vim编辑器的终极版本.pdf)
 
 ### [VIM shortcut key](vim_shortcut_key.md)
 
@@ -25,6 +27,3 @@
     ctrl+n|当前词补全项，下一个
     ctrl+p|当前词补全项，上一个
     :help NERDTree|NERDTree 帮助手册
-
-reference: http://vim.spf13.com/
-
