@@ -71,11 +71,11 @@
         conda search --full --name python
 
     安装一个不同版本的 python
-    > 现在我们假设你需要 python3 来编译程序，但是你不想覆盖掉你的 python2.7 来升级，你可以创建并激活一个名为 pyhton2 的环境，并通过下面的命令来安装最新版本的 python3
+    > 现在我们假设你需要 python3 来编译程序，但是你不想覆盖掉你的 python2.7 来升级，你可以创建并激活一个名为 python2 的环境，并通过下面的命令来安装最新版本的 python3
 
-        conda create -n pyhton2 python=2
+        conda create -n python2 python=2
 
-        source activate pyhton2
+        source activate python2
 
     确定环境添加成功
 
