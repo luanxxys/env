@@ -14,13 +14,13 @@
 
     打开上面网址，复制粘贴其中全部内容到 `hosts` 文件中。
 
-    重新登陆网络（学校无线网可用）即可。
+    执行 `ipconfig /flushdns` 或重新登陆网络（学校无线网可用）即可。
 
 - Unix/Linux
 
     hosts --> `/etc/hosts`
 
-    其它设置类似 windows 环境
+    其它设置类似 windows 环境。
 
 - [hosts 文件来源](https://github.com/lennylxx/ipv6-hosts)
 
