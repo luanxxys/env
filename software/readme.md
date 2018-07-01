@@ -10,6 +10,7 @@ Included both windows' and unix'
 
     name|summary
     ---|---
+    Zotero|
     xmind|
     chrome|
     Spotify|
