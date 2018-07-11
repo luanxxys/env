@@ -4,7 +4,7 @@
 
     $ yaourt vmware
 
-若提示缺少　kernel headers（Archlinux 中提示）, yaourt 进行安装即可。
+若提示缺少**kernel headers**（Archlinux 中提示）, yaourt 进行安装即可。
 
 ### Issue
 

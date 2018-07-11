@@ -1,4 +1,4 @@
-# Code::blocks
+# Code::Blocks
 
 - ### GNU/Linux
 
