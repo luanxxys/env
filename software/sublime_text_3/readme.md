@@ -41,6 +41,22 @@
 
         * ConvertToUTF8
 
+        * SublimeREPL
+
+            Python 控制台输入. 然后设置一个编译运行的快捷键，具体操作为：Preferences->Key Bindings-User
+
+                {
+                    "keys":["f5"],
+                    "caption":"SublimeREPL:Python - RUN current file",
+                    "command":"run_existing_window_command","args":
+                    {
+                        "id":"repl_python_run",
+                        "file":"config/Python/Main.sublime-menu"
+                    }
+                }
+
+
+
         * SublimeCodeIntel
 
             代码提示和补全
