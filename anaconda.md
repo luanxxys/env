@@ -119,4 +119,16 @@
         pip install see
     >  pip 只是一个包管理器，所以它不能为你管理环境, 所以首先激活我们想放置程序的环境
 
+- ### 添加源
+
+    conda 的源在国外, 可以更换源
+
+        conda config --add channels https://example.com
+
+            channels:
+              - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+              - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+              - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+              - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
 [reference:Anaconda 入门使用指南](http://www.jianshu.com/p/169403f7e40c)
