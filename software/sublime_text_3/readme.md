@@ -55,8 +55,6 @@
                     }
                 }
 
-
-
         * SublimeCodeIntel
 
             代码提示和补全
@@ -97,6 +95,24 @@
 
                 >>> "mathjax_enabled": true
 
+            测试过程中出现以下错误:
+
+                'Error: 404 Not Found
+                Sorry, the requested URL 'http://127.0.0.1:51004/view/28' caused an error:
+                'buffer_id(28) is not valid (closed or unsupported file format)'
+
+                **NOTE:** If you run multiple instances of Sublime Text, you may want to adjust
+                the `server_port` option in order to get this plugin work again.'
+
+            解决方法
+
+                Sublime Text > Preferences > Package Settings > OmniMarkupPreviewer > Settings - User
+                    {
+                        "renderer_options-MarkdownRenderer": {
+                            "extensions": ["tables", "fenced_code", "codehilite"]
+                        }
+                    }
+
         * MarkdownTOC
 
         * SideBar Enhancements
@@ -106,6 +122,17 @@
         * Compare Side-By-Side
 
             Sublime 版本的 Beyond Compare
+
+        * LaTeXTools
+
+            Package Settings->LaTeXTools->Settings – User ，在 Platfrom settings 段，根据自己的系统，修改相应的配置
+
+                这里以 Windows 为例。修改 texpath 的值为刚才的 TeXLive 安装目录下 bin 下的 win32 目录的路径，本例中为 C:\texlive\bin\win32 ，请根据实际情况修改。
+                然后，distro 的值修改为 texlive。sumtra 的值修改为刚才安装的 SumatraPDF 的路径。
+
+            最后在命令提示符里面执行(sumatrapdf 已添加入环境变量)
+
+                sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
 
         + #### 可选
 

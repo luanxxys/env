@@ -17,6 +17,7 @@ Included both windows' and unix'
     pycharm|
     sublime_text_3|
     PDF-XChange viewer|
+    SumatraPDF|
 
 - ### platform: Linux
 
