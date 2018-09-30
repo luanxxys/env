@@ -2,7 +2,7 @@
 
 ## 实验室有境外服务器，或自己有 SS 账号
 
-[使用 SwitchyOmega 代理上网](https://github.com/luanxxys/env/blob/master/software/google-chrome/SwitchyOmega.md)
+[使用 SwitchyOmega 代理上网](https://github.com/FelisCatus/SwitchyOmega/releases)
 
 ## 更改 hosts（实验室防火墙下或部分不可用）
 
