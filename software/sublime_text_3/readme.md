@@ -8,6 +8,8 @@
 
         选择 fcitx 修复版本（支持输入中文）
 
+        设置 >>> `"update_check":false`
+
     + ### GNU/Fedora
 
         fedora 需要选择 tarball 版本。下载后将 sublime text 3 解压后放到 opt 目录下。这是默认位置，你也可以选择其他路径，对应进行修改。
@@ -184,9 +186,5 @@
     + 中英文字体不对齐
 
         Consolas 是微软为程序员设置的字体, 但不支持中文。字体改为`"font_face":"微软雅黑"`（不好看，linux 下不对齐严重时使用）。
-
-    + 中文字体显示乱码
-
-            ConvertToUTF8
 
 
