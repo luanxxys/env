@@ -125,14 +125,21 @@
 
         * LaTeXTools
 
-            Package Settings->LaTeXTools->Settings – User ，在 Platfrom settings 段，根据自己的系统，修改相应的配置
+            Package Settings->LaTeXTools->Settings – User ，在 Platfrom settings 段，根据自己的系统，修改相应的配置。
 
-                这里以 Windows 为例。修改 texpath 的值为刚才的 TeXLive 安装目录下 bin 下的 win32 目录的路径，本例中为 C:\texlive\bin\win32 ，请根据实际情况修改。
-                然后，distro 的值修改为 texlive。sumtra 的值修改为刚才安装的 SumatraPDF 的路径。
+               - Windows
 
-            最后在命令提示符里面执行(sumatrapdf 已添加入环境变量)
+                    texpath 的值为刚才的 TeXLive 安装目录下 bin 下的 win32 目录的路径，本例中为 `C:\texlive\bin\win32` ，请根据实际情况修改。
+                    
+                    然后，distro 的值修改为 texlive。sumatra 的值修改为刚才安装的 SumatraPDF 的路径。
 
-                sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
+                    最后在命令提示符里面执行(sumatrapdf 已添加入环境变量)
+
+                        sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
+
+                - linux
+
+                    “texpath”, “python”, “viewer”: “evince” -- 其实都不用修改， 开箱即用
 
         + #### 可选
 

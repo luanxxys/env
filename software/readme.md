@@ -13,6 +13,7 @@ Included both windows' and unix'
     Zotero|
     xmind|
     chrome|
+    texlive|
     Spotify|
     pycharm|
     sublime_text_3|
