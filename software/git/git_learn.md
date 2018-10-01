@@ -4,7 +4,7 @@
 
         $ sudo pacman -S git
         $ git config --global user.name "your account"
-        $ git config --global user.email "email@example.com"
+        $ git config --global user.email "email@example.com"
 
     > --global 参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和 Email 地址
 
