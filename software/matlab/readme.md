@@ -6,37 +6,37 @@
 
         链接：https://pan.baidu.com/s/1o9rZTge 密码：8c80
 
-    文件夹里有 3 个文件，分别是 Matlab 2017a Linux64 Crack.rar、R2017a_glnxa64_dvd1.iso 和 R2017a_glnxa64_dvd2.iso,保存在了 `/home/choi/Downloads/` 这个路径下。
+    文件夹里有 3 个文件，分别是 Matlab 2017a Linux64 Crack.rar、R2017a_glnxa64_dvd1.iso 和 R2017a_glnxa64_dvd2.iso,保存在了 `/home/luanxxys/Downloads/` 这个路径下。
 
     挂载镜像 1
 
-        cd /home/choi/Downloads/
+        $ cd /home/luanxxys/Downloads/
 
         #创建挂载路径
-        mkdir -p /home/choi/matlab
+        $ mkdir -p /home/luanxxys/matlab
 
-        #挂载 `/home/choi/Downloads/R2017a_glnxa64_dvd1.iso` 到 `/home/choi/matlab`
-        sudo mount -t auto -o loop *dvd1.iso /home/choi/matlab
+        #挂载 `/home/luanxxys/Downloads/R2017a_glnxa64_dvd1.iso` 到 `/home/luanxxys/matlab`
+        $ sudo mount -t auto -o loop *dvd1.iso /home/luanxxys/matlab
 
-    然后进行安装，需要特别注意的是运行该命令的时候，终端不能处在 `/home/choi/matlab/`` 路径下，否则安装过程会被终止。
+    然后进行安装，需要特别注意的是运行该命令的时候，终端不能处在 `/home/luanxxys/matlab/ 路径下，否则安装过程会被终止。
 
-        sudo /home/choi/matlab/install
+        $ sudo /home/luanxxys/matlab/install
 
     挂载镜像 2,大概在安装过程进行到 75% 的时候会弹出提示要求挂载第二个镜像。挂载完毕后回到安装界面，点击继续即可。
 
         # 原来的终端别终止，新建一个终端切到镜像路径下
-        cd /home/choi/Downloads/
+        $ cd /home/luanxxys/Downloads/
 
-        # 挂载 `/home/choi/Downloads/R2017a_glnxa64_dvd2.iso` 到 `/home/choi/matlab`
-        sudo mount -t auto -o loop *dvd2.iso /home/choi/matlab
+        # 挂载 `/home/luanxxys/Downloads/R2017a_glnxa64_dvd2.iso` 到 `/home/luanxxys/matlab`
+        $ sudo mount -t auto -o loop *dvd2.iso /home/luanxxys/matlab
 
     卸载镜像
 
         # 该命令需要执行两次，因为挂载了 2 次在此路径
-        sudo umount /home/choi/matlab
+        $ sudo umount /home/luanxxys/matlab
 
         # 移除挂载路径
-        sudo rm -r /home/choi/matlab
+        $ sudo rm -r /home/luanxxys/matlab
 
 [reference](https://lanseyujie.com/post/matlab-r2017a-linux-download-and-activate.html)
 
