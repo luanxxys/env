@@ -16,6 +16,7 @@ Included both windows' and unix'
     texlive|
     Spotify|
     pycharm|
+    openshot|
     sublime_text_3|
 
 - ### platform: Linux
