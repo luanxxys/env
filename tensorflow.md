@@ -5,6 +5,10 @@
 ### Installing TensorFlow on Ubuntu with Anaconda
 > TensorFlow with GPU support
 
+simply use the command in your active env
+
+    $ pip install tensorflow-gpu
+
 - Activate the conda environment that you want to intall tensorflow
 
         $ source activate <coda_env_name>
