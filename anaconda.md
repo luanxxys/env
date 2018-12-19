@@ -26,17 +26,16 @@
         conda creat -n snowflakes biopython
     > 给 Biopython 创建一个新的环境，位置在 /envs/snowflakes
 
+    激活这个环境
+
         source activate snowflakes
-    > 激活这个环境
-    >
     > 未指定 python 版本，则默认为安装 conda 时的版本
 
     创建第二个环境
-
     > 创建并命名一个新环境，然后安装另一个版本的 python 以及两个包 Astroid 和 Babel
 
         conda create -n bunnies python=3 Astroid Babel
-    > 在 / envs/bunnies 文件夹
+    > 在 /envs/bunnies 文件夹
     >
     > 在你创建环境的同时安装好所有你想要的程序，在后来依次安装可能会导致依赖性问题
 
@@ -92,13 +91,17 @@
 
 - ### 管理包
 
-    查看该环境中包和其版本的列表
+    查看该环境中安装的包及其版本列表
 
         conda list
 
     查找一个包
 
         conda search <package_name>
+
+     删除一个包
+
+        conda remove <package_name>
 
     安装一个新包
 
