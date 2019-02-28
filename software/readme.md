@@ -1,49 +1,40 @@
 # Introduction
 
-This directory is mainly recording the softwares that are being used or already used by me.
-
-Included both windows' and unix'
+This directory is mainly recording the softwares that are being used, including both windows' and unix'.
 
 ## Catalog
 
 - ### Cross-platform
 
-    name|summary
-    ---|---
-    Zotero|
-    xmind|
-    chrome|
-    texlive|
-    Spotify|
-    pycharm|
-    openshot|
-    sublime_text_3|
-
+    chrome|onenote|sublime text 3
+    ---|---|---
+    youdao dict|xmind|pycharm
+    Zotero|github|Spotify
+    Bandizip|Everything|texlive    
+    openshot|Google Drive|Icloud Drive
+    PDFelement|Shadowsocks|RealVNC
+    
 - ### platform: Linux
 
-    name|summary
-    ---|---
-    openssh|
-    create_ap|
-    oh-my-zsh|
-    libreoffice|
-    p7zip, unrar|
-    ntfs-3g, dosfstools|
-    fbreader|mobi reader
-    kchmviewer|chm reader
+    openssh|create_ap|oh-my-zsh
+    ---|---|---
+    libreoffice|p7zip, unrar|ntfs-3g, dosfstools
+    fbreader|mobi reader|chm reader
+    kchmviewer||
+
+- ### Mac OS
+
+    1KeyBoard|Alfred|Appcleaner
+    ---|---|---
+    Android File Transfer/HandShaker|Clearview|The Unarchiver
+    Dash|HandBrake|InsomniaX
+    Iterm|Spark|Spectacle
 
 - ### platform: Windows 10
 
-    name|summary
-    ---|---
-    Rufus|
-    WinSCP|
-    xodo pdf|
-    Bandizip|
-    MagicEXIF|
-    sumatraPDF|
-    Partition Guru|
-    Everything|search file
+    Rufus|WinSCP|xodo pdf
+    ---|---|---
+    MagicEXIF|sumatraPDF|Partition Guru
 
     可选
 

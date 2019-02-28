@@ -9,6 +9,7 @@
         选择 fcitx 修复版本（支持输入中文）
 
         设置 >>> `"update_check":false`
+        > 激活正版之后
 
     + ### GNU/Fedora
 
@@ -115,11 +116,22 @@
                         }
                     }
 
+            或
+
+                [PackageResourceViewer]/OmniMarkupPreviewer/OmniMarkupLib/Renderers/libs/mdx_strikeout.py
+
+                Replace the makeExtension() method with the following:
+
+                    def makeExtension(*args, **kwargs):
+                        return StrikeoutExtension(*args, **kwargs)
+
+                Save, quit and reload Sublime Text.
+
         * MarkdownTOC
 
         * SideBar Enhancements
 
-            侧栏右键功能增强，非常实用
+            侧栏右键功能增强
 
         * Compare Side-By-Side
 
@@ -187,4 +199,6 @@
 
         Consolas 是微软为程序员设置的字体, 但不支持中文。字体改为`"font_face":"微软雅黑"`（不好看，linux 下不对齐严重时使用）。
 
+    + 无法安装 package control
 
+        遇到过这种情况一次, 最后发现是 network proxy 的原因

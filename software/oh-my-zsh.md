@@ -1,4 +1,8 @@
-# oh my zsh
+# [oh my zsh](https://ohmyz.sh/)
+
+### Install oh-my-zsh now
+
+        $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 - ### zsh
 
@@ -22,7 +26,7 @@
 
     1. Restart ZSH
 
-##### zsh setting
+### zsh setting
 
 安装完成之后打开 .zshrc 文件配置。我喜欢将主题设置为 random，启用几个插件，并添加 vim 的简化命令
 
