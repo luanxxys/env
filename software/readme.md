@@ -30,6 +30,16 @@ This directory is mainly recording the softwares that are being used, including 
     Dash|HandBrake|InsomniaX
     Iterm|Spark|Spectacle
 
+    #### Issues
+
+    Mac OS 10.14 Mojave App Store 异常解决办法
+    > 我遇到这个问题可能是因为从美区 ID 切换过来的原因
+
+    打开终端 (Teminal.app), 然后粘贴如下命令：
+
+        defaults delete com.apple.appstore.commerce
+    > 最好在执行这个之前，重启下电脑，或者注销一下 (注销方式：左上角苹果标，退出登录).
+
 - ### platform: Windows 10
 
     Rufus|WinSCP|xodo pdf
