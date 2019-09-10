@@ -20,6 +20,7 @@
             > 在用户主目录里找到 .ssh 目录，里面有 id_rsa 和 id_rsa.pub 两个文件，这两个就是 SSH Key 的秘钥对，id_rsa 是私钥，id_rsa.pub 是公钥
 
         1. * ##### 登陆 GitHub，`Account settings --> SSH Keys --> Add SSH Key`，填上任意 Title，在 Key 文本框里粘贴 id_rsa.pub 文件的内容
+
         > GitHub 只要知道了你的公钥，就可以确认只有你自己才能推送
         >
         > 可将密钥对保管好，多次使用（有安全隐患）
@@ -56,7 +57,28 @@
                 $ git checkout -b <local_branch> <remote_branch>
             > 若已存在本地分支名，则不用 -b 参数
 
-- ### 创建版本库（repository）及添加文件
+    + #### 更新远程代码到本地仓库并查看差异
+
+            $ git pull
+            $ git diff HEAD^
+        > 显示上一次提交之前工作目录与 git 仓库之间的差异
+
+
+        **或者相对安全的方式**
+
+            $ git fetch origin master:tmp
+        > 从远程的 origin 仓库的 master 分支下载到本地并新建一个分支 temp
+        
+            $ git diff tmp
+        > 比较 master 分支和 temp 分支的不同
+        
+            $ git merge tmp
+        > 合并 temp 分支到 master 分支
+        
+            $ git branch -d temp
+        > 删除此分支
+
+- ### 创建版本库及添加文件
 
     + #### 创建一个新目录
 
@@ -69,23 +91,20 @@
         > git init learn_git
 
     + #### 把文件添加到版本库
+    
         > 文件要在仓库中才能被 Git 识别
 
-        * ##### 把文件添加到仓库
+            $ git add readme.txt
+        > 把文件添加到仓库
 
-                $ git add readme.txt
+            $ git commit -m "massage"
+        > 把文件提交到仓库
 
-        * ##### 把文件提交到仓库
+            $ git status
+        > 查看添加结果
 
-                $ git commit -m "massage"
-
-        * ##### 查看添加结果
-
-                $ git status
-
-        * ##### 查看修改内容
-
-                $ git diff <file>
+            $ git diff <file>
+        > 查看修改内容
 
     所有的版本控制系统，其实只能跟踪文本文件的改动，比如 TXT 文件，网页，所有的程序代码等等，Git 也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词 “Linux”，在第 8 行删了一个单词 “Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只能把二进制文件每次改动串起来，也就是只知道图片从 100KB 改成了 120KB，但到底改了啥，版本控制系统不知道，也没法知道。
 
@@ -109,12 +128,15 @@
             $ git reflog
 
 - ### 工作区（working directory）
+- 
     > 在电脑里能看到的目录，比如我的 learn_git 文件夹就是一个工作区
 
 - ### 版本库（Repository）
+  
     > 工作区有一个隐藏目录 .git，这个不算工作区，而是 Git 的版本库
 
 - ### 暂存区（stage）
+  
     > Git的版本库里存了很多东西，其中最重要的就是称为 stage（或者叫index）的暂存区，还有 Git 为我们自动创建的第一个分支 master，以及指向 master 的一个指针叫 HEAD
 
     + #### 把文件往 Git 版本库里添加
@@ -167,13 +189,11 @@
             $ git checkout -b dev
         > -b参数表示创建并切换，相当于以下两条命令
 
-        * ##### 创建分支
+            $ git branch dev
+        > 创建分支
 
-                $ git branch dev
-
-        * ##### 切换分支
-
-                $ git checkout dev
+            $ git checkout dev
+        > 切换分支
 
     + #### 查看分支（当前分支前面会标一个*号）
 
@@ -208,17 +228,14 @@
 
     + #### 重命名远程分支
 
-        1. 删除远程分支
+            $ git push --delete origin develop
+        > 删除远程分支
 
-                $ git push --delete origin devel参数
+            $ git branch -m devel develop
+        > 重命名本地分支
 
-        1. 重命名本地分支
-
-                $ git branch -m devel develop
-
-        1. 推送本地分支
-
-                $ git push origin develop
+            $ git push origin develop
+        > 推送本地分支
 
     + #### 解决冲突
 
@@ -233,6 +250,7 @@
 - ### 分支管理策略
 
     + #### bug 分支
+    + 
         > 每个bug都可以通过一个新的临时分支来修复，修复后，合并分支，然后将临时分支删除。
 
         * ##### 把当前工作现场“储藏”起来
@@ -247,27 +265,25 @@
 
         * ##### 恢复现场
 
-            - ###### 查看之前储藏起来的工作区
+                $ git stash list
+            > 查看之前储藏起来的工作区
 
-                    $ git stash list
+                $ git stash apply
+            > 恢复工作区
 
-            - ###### 恢复工作区
+            但是恢复后，stash 内容并不删除，你需要用 *git stash drop* 来删除
 
-                    $ git stash apply
+                $ git stash pop
 
-                但是恢复后，stash 内容并不删除，你需要用 *git stash drop* 来删除
+            `git stash list` 查看不到内容即为成功
 
-                    $ git stash pop
+            可以多次 stash，恢复的时候，先用`git stash list`查看，然后恢复指定的 stash，用命令
 
-                `git stash list` 查看不到内容即为成功
+                $ git stash apply stash@{0}
 
-                可以多次 stash，恢复的时候，先用`git stash list`查看，然后恢复指定的 stash，用命令
+            如果要丢弃一个没有被合并过的分支，可以通过强行删除
 
-                    $ git stash apply stash@{0}
-
-                如果要丢弃一个没有被合并过的分支，可以通过强行删除
-
-                    $ git branch -D <branch>
+                $ git branch -D <branch>
 
     - #### 多人协作的工作模式
 
@@ -279,9 +295,7 @@
 
                 $ git pull
 
-        + ##### 如果合并有冲突，则解决冲突，并在本地提交
-
-        + ##### 没有冲突或者解决掉冲突后，再推送就能成功
+        + ##### 如果合并有冲突，则解决冲突，并在本地提交；没有冲突或者解决掉冲突后，再推送就能成功
 
                 $ git push origin <branch-name>
 
@@ -312,6 +326,7 @@
 
 
 - ### 标签管理
+- 
     > 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
     >
     > Git的标签虽然是版本库的快照，但其实它就是指向某个commit的指针，但不能像分支那样移动。
@@ -365,13 +380,12 @@
 
     + #### 删除远程标签
 
-        * ##### 先从本地删除
+            $ git tag -d v0.9
+        > 先从本地删除
 
-                $ git tag -d v0.9
-
-        * ##### 然后，从远程删除。删除命令也是 push
-
-                $ git push origin :refs/tags/v0.9
+            $ git push origin :refs/tags/v0.9
+        > 从远程删除
+        
 - ### 文件操作
 
         $ git ls-files

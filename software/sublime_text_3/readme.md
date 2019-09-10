@@ -4,11 +4,11 @@
 
     + ### Archlinux
 
-            yaourt sublime
+            $ yaourt sublime
 
-        选择 fcitx 修复版本（支持输入中文）
+        选择 fcitx 修复版本（支持中文输入）
 
-        设置 >>> `"update_check":false`
+            >>> `"update_check":false`
         > 激活正版之后
 
     + ### GNU/Fedora
@@ -154,6 +154,11 @@
                 - linux
 
                     “texpath”, “python”, “viewer”: “evince” -- 其实都不用修改， 开箱即用
+
+        * Sublime Highlight
+
+            在 Sublime Text 里选中需要复制的代码，右键 --> `Copy as HTML`，实现代码高亮。
+            > （可选）在 OneNote 里创建一个单格的表格，上底色，粘贴
 
         + #### 可选
 
