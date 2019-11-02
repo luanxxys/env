@@ -11,9 +11,6 @@
 
 ##### Machine Learning 会用到的工具, 例如
 
-- [tensorflow](tensorflow.md)
 - [anaconda](anaconda.md)
-- [XgBoost](XgBoost.md)
-- [LightGBM](LightGBM.md)
 
 完整列表可 check 文件夹, 特别的, [VPN](VPN.md).
