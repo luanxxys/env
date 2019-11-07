@@ -32,7 +32,7 @@
 
 - ### VPS + Shadowsocks
 
-    + 购买境外服务器([BUYVM](https://buyvm.net/))
+    + #### 购买境外服务器([BUYVM](https://buyvm.net/))
 
         BUYVM --> Client Area --> ORDER HOSTING --> New York - OpenVZ, 点击购买。
 
@@ -50,7 +50,7 @@
 
         > 最低套餐便宜大碗，稳定（即使别的“大牌”敏感时期不能用时）、不限量，但网速和价格“交相辉映”。一年期到了后，停用（11.7/2019）。
     
-    + 购买代理服务 [Surfshark](https://www.surfsharkchina.com/)
+    + #### 购买代理服务 [Surfshark](https://www.surfsharkchina.com/)
 
         ExpressVPN, NordVPN 等大牌可供选择。因为穷，迫使我选择了 Surfshark。
 
@@ -58,7 +58,7 @@
 
         支持切换不同的国家和地区，YouTube 1080P 可以一战，目前（11/7, 2019）使用尚可。
 
-    + 实验室有境外服务器，[设置 SwitchyOmega 代理](https://github.com/FelisCatus/SwitchyOmega/releases)。
+    + #### 实验室有境外服务器，[设置 SwitchyOmega 代理](https://github.com/FelisCatus/SwitchyOmega/releases)。
 
 ## 更改 hosts（IPv6）
 
