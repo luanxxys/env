@@ -10,10 +10,11 @@ This directory is mainly recording the softwares that are being used, including 
     ---|---|---
     youdao dict|xmind|pycharm
     Zotero|github|Spotify
-    Bandizip|Everything|texlive    
+    Bandizip|Everything|texlive
     openshot|Google Drive|Icloud Drive
     PDFelement|Shadowsocks|RealVNC
-    
+    Mathpix Snipping tool|Franz|
+
 - ### platform: Linux
 
     openssh|create_ap|oh-my-zsh
@@ -29,6 +30,9 @@ This directory is mainly recording the softwares that are being used, including 
     Android File Transfer/HandShaker|Clearview|The Unarchiver
     Dash|HandBrake|InsomniaX
     Iterm|Spark|Spectacle
+    Klib|reeder|ShadowsocksX
+    InsomniaX|iStat Menus|Vanilla
+    Easy New File|Alfred 3|
 
     #### Issues
 
