@@ -11,4 +11,4 @@ A Fast, Lightweight and Flexible Application Launcher for Linux
 
     yaourt albert
 
-[reference](http://www.2daygeek.com/install-albert-app-application-launcher-arch-linux-mint-debian-fedora-ubuntu/)
+- [reference](http://www.2daygeek.com/install-albert-app-application-launcher-arch-linux-mint-debian-fedora-ubuntu/)

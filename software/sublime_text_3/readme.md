@@ -155,7 +155,7 @@
 
                     “texpath”, “python”, “viewer”: “evince” -- 其实都不用修改， 开箱即用
 
-        * Sublime Highlight
+        * Highlight
 
             在 Sublime Text 里选中需要复制的代码，右键 --> `Copy as HTML`，实现代码高亮。
             > （可选）在 OneNote 里创建一个单格的表格，上底色，粘贴

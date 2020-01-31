@@ -134,4 +134,4 @@
               - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
               - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 
-[reference:Anaconda 入门使用指南](http://www.jianshu.com/p/169403f7e40c)
+- [reference: Anaconda 入门使用指南](http://www.jianshu.com/p/169403f7e40c)

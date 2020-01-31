@@ -1,15 +1,19 @@
 # Google Chrome
 
-[Search trick](search_trick.md)
+- [refer: Search trick](search_trick.md)
 
 ### Extensions
 
 name|desc
 ---|---
 AdBlock|
+Checker Plus for Google Calendar｜
 Chrono Download Manager|
+Google Arts & Culture｜
+Google Keep Chrome Extension｜
+Google Scholar Button｜
 Google Translate|
-Flash Video Downloader|
+Grammarly for Chrome｜
 HTTPS Everywhere|
 LastPass: Free Password Manager|
 Markdown Here|
@@ -17,12 +21,15 @@ Octotree|
 OneNote Web Clipper|
 [Proxy SwitchyOmega](SwitchyOmega.md)|
 Remove Google Redirection|
+Tampermonkey｜
+Tide - Focus Timer & White Noise｜
+Video Speed Controller｜
 Vimium|
 九章刷题小助手 |
 為什麼你們就是不能加個空格呢？| 设成自动
+Vysor｜Chrome App
 
-### Configuration
-    > windows platform
+### Configuration on windows platform
 
 1. 设置 chrome 启动默认为隐身模式
 

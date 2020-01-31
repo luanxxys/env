@@ -13,4 +13,4 @@
 
 - [anaconda](anaconda.md)
 
-完整列表可 check 文件夹, 特别的, [VPN](VPN.md).
+完整列表可 check 文件夹，特别的，[VPN](VPN.md).

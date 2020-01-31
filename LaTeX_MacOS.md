@@ -1,4 +1,4 @@
-# macOS 配置 LaTeX 环境
+·# macOS 配置 LaTeX 环境
 
 - ### 安装 [MacTeX](https://www.tug.org/mactex/)
 
@@ -61,7 +61,7 @@
                     $ latex hithesis.ins
 
             - 生成论文
-            
+
                     $ xelatex main.tex
                     $ bibtex main
                     $ xelatex main.tex

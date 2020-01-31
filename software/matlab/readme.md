@@ -12,10 +12,10 @@
 
         $ cd /home/luanxxys/Downloads/
 
-        #创建挂载路径
+        # 创建挂载路径
         $ mkdir -p /home/luanxxys/matlab
 
-        #挂载 `/home/luanxxys/Downloads/R2017a_glnxa64_dvd1.iso` 到 `/home/luanxxys/matlab`
+        # 挂载 `/home/luanxxys/Downloads/R2017a_glnxa64_dvd1.iso` 到 `/home/luanxxys/matlab`
         $ sudo mount -t auto -o loop *dvd1.iso /home/luanxxys/matlab
 
     然后进行安装，需要特别注意的是运行该命令的时候，终端不能处在 `/home/luanxxys/matlab/ 路径下，否则安装过程会被终止。
